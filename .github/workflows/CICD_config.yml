@@ -1,4 +1,4 @@
-name: CI/CD counter app
+name: CI/CD Deployment Test
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
           
             #Now we have got the access of EC2 and we will start the deploy .
             cd /var/www/itsmerabin.rocks/public_html/Deployment_test &&
-            sudo git checkout master &&
+            sudo git checkout main &&
             sudo git fetch --all &&
             sudo git reset --hard origin/main &&
             sudo git pull origin main &&
